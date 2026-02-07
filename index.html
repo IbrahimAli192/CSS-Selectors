@@ -11,10 +11,21 @@
         input[type="password"]{
             border: 2px solid green;
         }
-        ul li{
-            color: magenta;
-            
+        /*ul li{
+            color: magenta;     
+        } */
+        h1 + p{
+            color: green;
         }
+        li:first-child{
+color:red;
+}
+li:nth-child(2){
+background-color: lightgreen;
+}
+li:nth-child(3){
+color: blue;
+}
     </style>
 </head>
 <body>
@@ -31,10 +42,15 @@
      </div>
      <button type="submit">Login</button>
      <!--Child Selectors-->
+     <!--ul ==> Parent li ==> child-->
      <ul>
         <li>first</li>
         <li>second</li>
         <li>third</li>
      </ul>
+     <!--Sibling Selectors-->
+     <h1>This is sibling 1</h1>
+     <p>This is sibling 2</p>
+
 </body>
 </html>
