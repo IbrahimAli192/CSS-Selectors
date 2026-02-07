@@ -1,75 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Advanced selectors</title>
     <style>
-        input[type="email"]{
+        input[type="email"] {
             border: 2px solid red;
         }
-        input[type="password"]{
+
+        input[type="password"] {
             border: 2px solid green;
         }
+
         /*ul li{
             color: magenta;     
         } */
-        h1 + p{
+        h1+p {
             color: green;
         }
-        li:first-child{
-color:red;
-}
-li:nth-child(2){
-background-color: lightgreen;
-}
-li:nth-child(3){
-color: blue;
-}
 
-/*pesudo class*/
-#hov {
-background-color: wheat;
-height: 50px;
-width: 100px;
-border: 3px solid grey;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-#hov:hover{
-cursor: pointer;
-transform: scale(1.06);
-transition: 0.4s;
-background-color: #444;
-color: white;
-}
+        li:first-child {
+            color: red;
+        }
+
+        li:nth-child(2) {
+            background-color: lightgreen;
+        }
+
+        li:nth-child(3) {
+            color: blue;
+        }
+
+        /*pesudo class*/
+        #hov {
+            background-color: wheat;
+            height: 50px;
+            width: 100px;
+            border: 3px solid grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #hov:hover {
+            cursor: pointer;
+            transform: scale(1.06);
+            transition: 0.4s;
+            background-color: #444;
+            color: white;
+        }
+        h3:not(.two){
+            color: red;
+        }
     </style>
 </head>
+
 <body>
     <!-- input selectors -->
-     <form action="#"></form>
-     <div>
+    <form action="#"></form>
+    <div>
         <label for=" ">Enter Email</label>
         <input type="email">
-     </div>
+    </div>
 
-     <div>
+    <div>
         <label for=" ">Enter Password</label>
         <input type="password">
-     </div>
-     <button type="submit">Login</button>
-     <!--Child Selectors-->
-     <!--ul ==> Parent li ==> child-->
-     <ul>
+    </div>
+    <button type="submit">Login</button>
+    <!--Child Selectors-->
+    <!--ul ==> Parent li ==> child-->
+    <ul>
         <li>first</li>
         <li>second</li>
         <li>third</li>
-     </ul>
-     <!--Sibling Selectors-->
-     <h1>This is sibling 1</h1>
-     <p>This is sibling 2</p>
+    </ul>
+    <!--Sibling Selectors-->
+    <h1>This is sibling 1</h1>
+    <p>This is sibling 2</p>
 
-    <p id="hov">Codingal</p> 
+    <p id="hov">Codingal</p>
+
+
+<h3 class="one">heading 1</h3>
+<h3 class="two">heading 2</h3>
+<h3 class="three">heading 3</h3>
 </body>
 </html>
