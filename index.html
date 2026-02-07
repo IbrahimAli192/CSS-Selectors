@@ -26,6 +26,24 @@ background-color: lightgreen;
 li:nth-child(3){
 color: blue;
 }
+
+/*pesudo class*/
+#hov {
+background-color: wheat;
+height: 50px;
+width: 100px;
+border: 3px solid grey;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#hov:hover{
+cursor: pointer;
+transform: scale(1.06);
+transition: 0.4s;
+background-color: #444;
+color: white;
+}
     </style>
 </head>
 <body>
@@ -52,5 +70,6 @@ color: blue;
      <h1>This is sibling 1</h1>
      <p>This is sibling 2</p>
 
+    <p id="hov">Codingal</p> 
 </body>
 </html>
